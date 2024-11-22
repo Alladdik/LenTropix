@@ -15,6 +15,11 @@ function Home() {
     { icon: FaDatabase, name: 'SQL' },
   ];
 
+  const projects = [
+    { name: 'Blinksy', progress: '1%', description: t('projects.blinksy') },
+    { name: t('projects.ai.name'), progress: 'Coming Soon', description: t('projects.ai.description') },
+    { name: t('projects.games.name'), progress: 'Coming Soon', description: t('projects.games.description') },
+  ];
   return (
     <div className="pt-16">
       {/* Hero Section */}
@@ -40,20 +45,43 @@ function Home() {
               GitHub
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="px-8 py-3 bg-dark border border-accent hover:bg-accent/20 transition-colors rounded-full font-semibold"
             >
-              Contact Us
+              {t('nav.contact')}
             </a>
           </div>
         </div>
       </motion.section>
 
+      {/* Projects Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            {t('projects.title')}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <motion.div
+                key={project.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className="p-6 bg-dark/50 rounded-lg hover:bg-secondary/20 transition-colors"
+              >
+                <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
+                <p className="text-accent mb-4">{project.progress}</p>
+                <p>{project.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* Technologies Section */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Our Technologies
+            {t('technologies.title')}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {technologies.map((tech, index) => (

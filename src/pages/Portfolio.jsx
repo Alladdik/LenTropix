@@ -7,9 +7,9 @@ function Portfolio() {
       title: 'La Mirage',
       description: 'Elegant and sophisticated web platform showcasing luxury experiences',
       tags: ['Next.js', 'React', 'Tailwind CSS'],
-      github: 'https://github.com/Alladdik',
+      github: 'https://github.com/Alladdik/lamirage',
       demo: 'https://lamirage.vercel.app/',
-      image: 'https://i.imgur.com/XYBf7dM.png',
+      image: '/lamirage.jpg',
     },
   ];
 

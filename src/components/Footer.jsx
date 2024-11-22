@@ -10,7 +10,7 @@ function Footer() {
               LenTropix
             </span>
             <p className="mt-2 text-sm text-gray-400">
-              Your Partner in AI and Development Solutions
+            Your partner and development solutions
             </p>
           </div>
           
