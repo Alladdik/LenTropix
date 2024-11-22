@@ -49,7 +49,7 @@ function Home() {
               href="/contact"
               className="px-8 py-3 bg-dark border border-accent hover:bg-accent/20 transition-colors rounded-full font-semibold"
             >
-              {t('nav.contact')}
+              Contact Us
             </a>
           </div>
         </div>
