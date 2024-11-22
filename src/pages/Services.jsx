@@ -5,7 +5,7 @@ function Services() {
   const services = [
     {
       icon: FaRobot,
-      title: 'AI Solutions',
+      title: 'AI Solutions(Coming Soon)',
       description: 'Custom AI and machine learning solutions for your business needs',
     },
     {
@@ -15,7 +15,7 @@ function Services() {
     },
     {
       icon: FaMobile,
-      title: 'Mobile Development',
+      title: 'Mobile Development(Coming Soon)',
       description: 'Native and cross-platform mobile applications',
     },
     {
@@ -30,7 +30,7 @@ function Services() {
     },
     {
       icon: FaCloud,
-      title: 'Cloud Solutions',
+      title: 'Cloud Solutions(Coming Soon)',
       description: 'Cloud infrastructure and deployment services',
     },
   ];
