@@ -1,37 +1,39 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { FaRobot, FaCode, FaMobile, FaDatabase, FaPalette, FaCloud } from 'react-icons/fa';
 
 function Services() {
+  const { t } = useTranslation();
   const services = [
     {
       icon: FaRobot,
-      title: 'AI Solutions(Coming Soon)',
-      description: 'Custom AI and machine learning solutions for your business needs',
+      title: t('services.ai.title'),
+      description: t('services.ai.description'),
     },
     {
       icon: FaCode,
-      title: 'Web Development',
-      description: 'Modern web applications using cutting-edge technologies',
+      title: t('services.web.title'),
+      description: t('services.web.description'),
     },
     {
       icon: FaMobile,
-      title: 'Mobile Development(Coming Soon)',
-      description: 'Native and cross-platform mobile applications',
+      title: t('services.mobile.title'),
+      description: t('services.mobile.description'),
     },
     {
       icon: FaDatabase,
-      title: 'Database Design',
-      description: 'Efficient and scalable database solutions',
+      title: t('services.database.title'),
+      description: t('services.database.description'),
     },
     {
       icon: FaPalette,
-      title: 'UI/UX Design',
-      description: 'Beautiful and intuitive user interfaces',
+      title: t('services.uiux.title'),
+      description: t('services.uiux.description'),
     },
     {
       icon: FaCloud,
-      title: 'Cloud Solutions(Coming Soon)',
-      description: 'Cloud infrastructure and deployment services',
+      title: t('services.cloud.title'),
+      description: t('services.cloud.description'),
     },
   ];
 
@@ -43,7 +45,7 @@ function Services() {
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl md:text-5xl font-bold text-center mb-12"
         >
-          Our Services
+          {t('services.title')}
         </motion.h1>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

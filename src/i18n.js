@@ -29,6 +29,33 @@ const resources = {
       technologies: {
         title: 'Our Technologies',
       },
+      services: {
+        title: 'Our Services',
+        ai: {
+          title: 'AI Solutions(Coming Soon)',
+          description: 'Custom AI and machine learning solutions for your business needs',
+        },
+        web: {
+          title: 'Web Development',
+          description: 'Modern web applications using cutting-edge technologies',
+        },
+        mobile: {
+          title: 'Mobile Development(Coming Soon)',
+          description: 'Native and cross-platform mobile applications',
+        },
+        database: {
+          title: 'Database Design',
+          description: 'Efficient and scalable database solutions',
+        },
+        uiux: {
+          title: 'UI/UX Design',
+          description: 'Beautiful and intuitive user interfaces',
+        },
+        cloud: {
+          title: 'Cloud Solutions(Coming Soon)',
+          description: 'Cloud infrastructure and deployment services',
+        },
+      },
     },
   },
   ru: {
@@ -58,6 +85,33 @@ const resources = {
       technologies: {
         title: 'Наши Технологии',
       },
+      services: {
+        title: 'Наши Услуги',
+        ai: {
+          title: 'ИИ Решения(Скоро)',
+          description: 'Индивидуальные решения ИИ и машинного обучения для вашего бизнеса',
+        },
+        web: {
+          title: 'Веб-разработка',
+          description: 'Современные веб-приложения с использованием передовых технологий',
+        },
+        mobile: {
+          title: 'Мобильная разработка(Скоро)',
+          description: 'Нативные и кроссплатформенные мобильные приложения',
+        },
+        database: {
+          title: 'Проектирование баз данных',
+          description: 'Эффективные и масштабируемые решения для баз данных',
+        },
+        uiux: {
+          title: 'UI/UX Дизайн',
+          description: 'Красивые и интуитивно понятные пользовательские интерфейсы',
+        },
+        cloud: {
+          title: 'Облачные решения(Скоро)',
+          description: 'Облачная инфраструктура и услуги развертывания',
+        },
+      },
     },
   },
   uk: {
@@ -86,6 +140,33 @@ const resources = {
       },
       technologies: {
         title: 'Наші Технології',
+      },
+      services: {
+        title: 'Наші Послуги',
+        ai: {
+          title: 'ШІ Рішення(Незабаром)',
+          description: 'Індивідуальні рішення ШІ та машинного навчання для вашого бізнесу',
+        },
+        web: {
+          title: 'Веб-розробка',
+          description: 'Сучасні веб-додатки з використанням передових технологій',
+        },
+        mobile: {
+          title: 'Мобільна розробка(Незабаром)',
+          description: 'Нативні та кросплатформні мобільні додатки',
+        },
+        database: {
+          title: 'Проектування баз даних',
+          description: 'Ефективні та масштабовані рішення для баз даних',
+        },
+        uiux: {
+          title: 'UI/UX Дизайн',
+          description: 'Красиві та інтуїтивно зрозумілі користувацькі інтерфейси',
+        },
+        cloud: {
+          title: 'Хмарні рішення(Незабаром)',
+          description: 'Хмарна інфраструктура та послуги розгортання',
+        },
       },
     },
   },
