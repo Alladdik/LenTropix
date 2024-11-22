@@ -20,6 +20,7 @@ function Home() {
     { name: t('projects.ai.name'), progress: 'Coming Soon', description: t('projects.ai.description') },
     { name: t('projects.games.name'), progress: 'Coming Soon', description: t('projects.games.description') },
   ];
+
   return (
     <div className="pt-16">
       {/* Hero Section */}
@@ -70,13 +71,24 @@ function Home() {
                 className="p-6 bg-dark/50 rounded-lg hover:bg-secondary/20 transition-colors"
               >
                 <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
-                <p className="text-accent mb-4">{project.progress}</p>
+                <div className="mb-4">
+                  <div className="flex justify-between items-center mb-1">
+                    <span className="text-sm font-medium text-accent">{project.progress}</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2.5">
+                    <div 
+                      className="bg-accent h-2.5 rounded-full" 
+                      style={{ width: project.progress === 'Coming Soon' ? '0%' : project.progress }}
+                    ></div>
+                  </div>
+                </div>
                 <p>{project.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
       {/* Technologies Section */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
