@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { FaPython, FaReact, FaDatabase } from 'react-icons/fa';
 import { SiCplusplus, SiCsharp, SiJavascript } from 'react-icons/si';
 
@@ -45,12 +46,12 @@ function Home() {
             >
               GitHub
             </a>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="px-8 py-3 bg-dark border border-accent hover:bg-accent/20 transition-colors rounded-full font-semibold"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </motion.section>
